@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+.container {
+    text-align: center;
+    background: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rounds h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.choices {
+    margin: 20px 0;
+}
+
+.choice, .reset {
+    padding: 12px 24px;
+    margin: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: #444;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.choice:hover, .reset:hover {
+    background-color: #fff;
+    color: #444;
+    transform: scale(1.1);
+}
+
+.result h2 {
+    margin: 10px 0;
+}
+
+.reset {
+    margin-top: 20px;
+}
+
+.winner-text {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.winner-text.animate {
+    opacity: 1;
+    transform: scale(1.2);
+}
